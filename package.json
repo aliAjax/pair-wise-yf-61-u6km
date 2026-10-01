@@ -6,7 +6,8 @@
     "dev": "ng serve --host 0.0.0.0 --port 62026",
     "start": "ng serve --host 0.0.0.0 --port 62026",
     "build": "ng build",
-    "preview": "ng serve --host 0.0.0.0 --port 62026"
+    "preview": "ng serve --host 0.0.0.0 --port 62026",
+    "test:ledger": "tsc -p tsconfig.ledger.json && node dist-test/scripts/test-ledger.js"
   },
   "dependencies": {
     "@angular/animations": "20.3.32",
@@ -28,6 +29,7 @@
     "@angular-devkit/build-angular": "20.3.32",
     "@angular/cli": "20.3.32",
     "@angular/compiler-cli": "20.3.32",
+    "@types/node": "^20.14.0",
     "typescript": "~5.9.3"
   }
 }
