@@ -10,6 +10,6 @@ export class AppTranslocoLoader implements TranslocoLoader {
   private readonly http = inject(HttpClient);
 
   getTranslation(lang: string): Observable<TranslationMap> {
-    return this.http.get<TranslationMap>(`/i18n/${lang}.json`);
+    return this.http.get<TranslationMap>(`/assets/i18n/${lang}.json`);
   }
 }
